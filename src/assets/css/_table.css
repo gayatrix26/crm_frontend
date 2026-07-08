@@ -1,0 +1,173 @@
+/* ==========================================================
+   TABLE
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   TABLE WRAPPER
+   ========================================================== */
+
+.table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+
+/* ==========================================================
+   BASE TABLE
+   ========================================================== */
+
+.table{
+
+    width:100%;
+
+    background:var(--card-color);
+
+    border-collapse:collapse;
+
+}
+
+
+/* ==========================================================
+   TABLE HEADER
+   ========================================================== */
+
+.table-header{
+
+    background:var(--primary-color);
+
+    color:var(--text-inverse-color);
+
+}
+
+
+/* ==========================================================
+   TABLE HEADER CELL
+   ========================================================== */
+
+.table-header-cell{
+
+    padding:16px;
+
+    text-align:left;
+
+    font-size:var(--font-small);
+
+    font-weight:var(--weight-semi-bold);
+
+}
+
+
+/* ==========================================================
+   TABLE ROW
+   ========================================================== */
+
+.table-row{
+
+    border-bottom:1px solid var(--border-color);
+
+    transition:var(--transition-fast);
+
+}
+
+.table-row:hover{
+
+    background:rgba(124,58,237,.05);
+
+}
+
+
+/* ==========================================================
+   TABLE CELL
+   ========================================================== */
+
+.table-cell{
+
+    padding:16px;
+
+    color:var(--text-color);
+
+    vertical-align:middle;
+
+}
+
+
+/* ==========================================================
+   TABLE ACTION
+   ========================================================== */
+
+.table-action{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--spacing-small);
+
+}
+
+
+/* ==========================================================
+   TABLE EMPTY
+   ========================================================== */
+
+.table-empty{
+
+    padding:40px;
+
+    text-align:center;
+
+    color:var(--text-muted-color);
+
+}
+
+
+/* ==========================================================
+   MATERIAL TABLE
+   ========================================================== */
+
+.mat-mdc-table{
+
+    background:var(--card-color);
+
+}
+
+.mat-mdc-header-row{
+
+    background:var(--primary-color);
+
+}
+
+.mat-mdc-header-cell{
+
+    color:var(--text-inverse-color);
+
+    font-size:var(--font-small);
+
+    font-weight:var(--weight-semi-bold);
+
+}
+
+.mat-mdc-row{
+
+    transition:var(--transition-fast);
+
+}
+
+.mat-mdc-row:hover{
+
+    background:rgba(124,58,237,.05);
+
+}
+
+.mat-mdc-cell{
+
+    color:var(--text-color);
+
+    border-bottom-color:var(--border-color);
+
+}

@@ -1,0 +1,154 @@
+/* ==========================================================
+   CARD
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   BASE CARD
+   ========================================================== */
+
+.card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-large);
+
+    box-shadow:var(--shadow-small);
+
+    overflow:hidden;
+
+    transition:var(--transition-medium);
+
+}
+
+
+/* ==========================================================
+   CARD HOVER
+   ========================================================== */
+
+.card:hover{
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   CARD HEADER
+   ========================================================== */
+
+.card-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:var(--spacing-large);
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+/* ==========================================================
+   CARD TITLE
+   ========================================================== */
+
+.card-title{
+
+    margin:0;
+
+    font-size:var(--font-large);
+
+    font-weight:var(--weight-semi-bold);
+
+    color:var(--text-color);
+
+}
+
+
+/* ==========================================================
+   CARD SUBTITLE
+   ========================================================== */
+
+.card-subtitle{
+
+    margin-top:var(--spacing-extra-small);
+
+    color:var(--text-light-color);
+
+    font-size:var(--font-small);
+
+}
+
+
+/* ==========================================================
+   CARD BODY
+   ========================================================== */
+
+.card-body{
+
+    padding:var(--spacing-large);
+
+}
+
+
+/* ==========================================================
+   CARD FOOTER
+   ========================================================== */
+
+.card-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-end;
+
+    gap:var(--spacing-small);
+
+    padding:var(--spacing-large);
+
+    border-top:1px solid var(--border-color);
+
+}
+
+
+/* ==========================================================
+   COMPACT CARD
+   ========================================================== */
+
+.card-compact .card-header,
+.card-compact .card-body,
+.card-compact .card-footer{
+
+    padding:var(--spacing-medium);
+
+}
+
+
+/* ==========================================================
+   FLAT CARD
+   ========================================================== */
+
+.card-flat{
+
+    box-shadow:none;
+
+}
+
+
+/* ==========================================================
+   BORDERLESS CARD
+   ========================================================== */
+
+.card-borderless{
+
+    border:none;
+
+}

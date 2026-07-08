@@ -1,0 +1,357 @@
+/* ==========================================================
+   UTILITY
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   DISPLAY
+   ========================================================== */
+
+.display-none{
+
+    display:none;
+
+}
+
+.display-block{
+
+    display:block;
+
+}
+
+.display-inline{
+
+    display:inline;
+
+}
+
+.display-inline-block{
+
+    display:inline-block;
+
+}
+
+
+/* ==========================================================
+   FLEX
+   ========================================================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-row{
+
+    display:flex;
+
+    flex-direction:row;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+
+/* ==========================================================
+   GRID
+   ========================================================== */
+
+.grid{
+
+    display:grid;
+
+}
+
+.grid-center{
+
+    display:grid;
+
+    place-items:center;
+
+}
+
+
+/* ==========================================================
+   GAP
+   ========================================================== */
+
+.gap-extra-small{
+
+    gap:var(--spacing-extra-small);
+
+}
+
+.gap-small{
+
+    gap:var(--spacing-small);
+
+}
+
+.gap-medium{
+
+    gap:var(--spacing-medium);
+
+}
+
+.gap-large{
+
+    gap:var(--spacing-large);
+
+}
+
+.gap-extra-large{
+
+    gap:var(--spacing-extra-large);
+
+}
+
+
+/* ==========================================================
+   ALIGNMENT
+   ========================================================== */
+
+.align-start{
+
+    align-items:flex-start;
+
+}
+
+.align-center{
+
+    align-items:center;
+
+}
+
+.align-end{
+
+    align-items:flex-end;
+
+}
+
+.justify-start{
+
+    justify-content:flex-start;
+
+}
+
+.justify-center{
+
+    justify-content:center;
+
+}
+
+.justify-end{
+
+    justify-content:flex-end;
+
+}
+
+.justify-between{
+
+    justify-content:space-between;
+
+}
+
+.justify-around{
+
+    justify-content:space-around;
+
+}
+
+.justify-evenly{
+
+    justify-content:space-evenly;
+
+}
+
+
+/* ==========================================================
+   TEXT ALIGNMENT
+   ========================================================== */
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+
+/* ==========================================================
+   WIDTH
+   ========================================================== */
+
+.width-full{
+
+    width:100%;
+
+}
+
+.width-auto{
+
+    width:auto;
+
+}
+
+
+/* ==========================================================
+   HEIGHT
+   ========================================================== */
+
+.height-full{
+
+    height:100%;
+
+}
+
+.height-auto{
+
+    height:auto;
+
+}
+
+
+/* ==========================================================
+   POSITION
+   ========================================================== */
+
+.position-relative{
+
+    position:relative;
+
+}
+
+.position-absolute{
+
+    position:absolute;
+
+}
+
+.position-fixed{
+
+    position:fixed;
+
+}
+
+.position-sticky{
+
+    position:sticky;
+
+}
+
+
+/* ==========================================================
+   OVERFLOW
+   ========================================================== */
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+.overflow-auto{
+
+    overflow:auto;
+
+}
+
+.overflow-scroll{
+
+    overflow:scroll;
+
+}
+
+.overflow-x-auto{
+
+    overflow-x:auto;
+
+}
+
+.overflow-y-auto{
+
+    overflow-y:auto;
+
+}
+
+
+/* ==========================================================
+   VISIBILITY
+   ========================================================== */
+
+.visibility-hidden{
+
+    visibility:hidden;
+
+}
+
+.visibility-visible{
+
+    visibility:visible;
+
+}
+
+
+/* ==========================================================
+   CURSOR
+   ========================================================== */
+
+.cursor-pointer{
+
+    cursor:pointer;
+
+}
+
+.cursor-default{
+
+    cursor:default;
+
+}
+
+.cursor-not-allowed{
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==========================================================
+   USER SELECT
+   ========================================================== */
+
+.user-select-none{
+
+    user-select:none;
+
+}
+
+.user-select-all{
+
+    user-select:all;
+
+}

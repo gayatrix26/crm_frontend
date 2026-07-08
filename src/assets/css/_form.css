@@ -1,0 +1,220 @@
+/* ==========================================================
+   FORM
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   FORM
+   ========================================================== */
+
+.form{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   FORM GROUP
+   ========================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--spacing-small);
+
+    margin-bottom:var(--spacing-large);
+
+}
+
+
+/* ==========================================================
+   FORM ROW
+   ========================================================== */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:var(--spacing-large);
+
+}
+
+
+/* ==========================================================
+   FORM LABEL
+   ========================================================== */
+
+.form-label{
+
+    font-size:var(--font-small);
+
+    font-weight:var(--weight-medium);
+
+    color:var(--text-color);
+
+}
+
+
+/* ==========================================================
+   FORM INPUT
+   ========================================================== */
+
+.form-input,
+
+.form-select,
+
+.form-textarea{
+
+    width:100%;
+
+    padding:12px 16px;
+
+    font-size:var(--font-medium);
+
+    color:var(--text-color);
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    outline:none;
+
+    transition:var(--transition-medium);
+
+}
+
+
+/* ==========================================================
+   FORM TEXTAREA
+   ========================================================== */
+
+.form-textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+
+/* ==========================================================
+   PLACEHOLDER
+   ========================================================== */
+
+.form-input::placeholder,
+
+.form-textarea::placeholder{
+
+    color:var(--text-muted-color);
+
+}
+
+
+/* ==========================================================
+   FOCUS
+   ========================================================== */
+
+.form-input:focus,
+
+.form-select:focus,
+
+.form-textarea:focus{
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 0 3px rgba(124,58,237,.15);
+
+}
+
+
+/* ==========================================================
+   DISABLED
+   ========================================================== */
+
+.form-input:disabled,
+
+.form-select:disabled,
+
+.form-textarea:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==========================================================
+   READONLY
+   ========================================================== */
+
+.form-input[readonly],
+
+.form-textarea[readonly]{
+
+    background:var(--background-color);
+
+}
+
+
+/* ==========================================================
+   REQUIRED
+   ========================================================== */
+
+.form-required{
+
+    color:var(--danger-color);
+
+}
+
+
+/* ==========================================================
+   HELP TEXT
+   ========================================================== */
+
+.form-help{
+
+    font-size:var(--font-small);
+
+    color:var(--text-muted-color);
+
+}
+
+
+/* ==========================================================
+   ERROR TEXT
+   ========================================================== */
+
+.form-error{
+
+    font-size:var(--font-small);
+
+    color:var(--danger-color);
+
+}
+
+
+/* ==========================================================
+   FORM ACTION
+   ========================================================== */
+
+.form-action{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:var(--spacing-medium);
+
+    margin-top:var(--spacing-large);
+
+}

@@ -1,4 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* ==========================================================
+   DESIGN TOKENS
+   ========================================================== */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "./assets/css/_variables.css";
+
+
+/* ==========================================================
+   THEMES
+   ========================================================== */
+
+@import "./assets/css/_light-theme.css";
+@import "./assets/css/_dark-theme.css";
+@import "./assets/css/_theme.css";
+
+
+/* ==========================================================
+   GLOBAL STYLES
+   ========================================================== */
+
+@import "./assets/css/_reset.css";
+@import "./assets/css/_typography.css";
+@import "./assets/css/_layout.css";
+
+
+/* ==========================================================
+   GLOBAL COMPONENTS
+   ========================================================== */
+
+@import "./assets/css/_button.css";
+@import "./assets/css/_card.css";
+@import "./assets/css/_form.css";
+@import "./assets/css/_table.css";
+@import "./assets/css/_badge.css";
+
+
+/* ==========================================================
+   GLOBAL UTILITIES
+   ========================================================== */
+
+@import "./assets/css/_utility.css";
+@import "./assets/css/_animation.css";
+@import "./assets/css/_responsive.css";

@@ -1,0 +1,224 @@
+/* ==========================================================
+   BUTTON
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   BASE BUTTON
+   ========================================================== */
+
+.button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:var(--spacing-small);
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:var(--radius-medium);
+
+    font-size:var(--font-medium);
+
+    font-weight:var(--weight-medium);
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:var(--transition-medium);
+
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+   ========================================================== */
+
+.button-primary{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--primary-light-color)
+    );
+
+    color:var(--text-inverse-color);
+
+    box-shadow:var(--shadow-small);
+
+}
+
+.button-primary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   SECONDARY BUTTON
+   ========================================================== */
+
+.button-secondary{
+
+    background:linear-gradient(
+        135deg,
+        var(--secondary-color),
+        var(--secondary-light-color)
+    );
+
+    color:var(--text-color);
+
+    box-shadow:var(--shadow-small);
+
+}
+
+.button-secondary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   OUTLINE BUTTON
+   ========================================================== */
+
+.button-outline{
+
+    background:transparent;
+
+    color:var(--primary-color);
+
+    border:1px solid var(--primary-color);
+
+}
+
+.button-outline:hover{
+
+    background:var(--primary-color);
+
+    color:var(--text-inverse-color);
+
+}
+
+
+/* ==========================================================
+   SUCCESS BUTTON
+   ========================================================== */
+
+.button-success{
+
+    background:var(--success-color);
+
+    color:var(--text-inverse-color);
+
+}
+
+.button-success:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   WARNING BUTTON
+   ========================================================== */
+
+.button-warning{
+
+    background:var(--warning-color);
+
+    color:var(--text-inverse-color);
+
+}
+
+.button-warning:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   DANGER BUTTON
+   ========================================================== */
+
+.button-danger{
+
+    background:var(--danger-color);
+
+    color:var(--text-inverse-color);
+
+}
+
+.button-danger:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-medium);
+
+}
+
+
+/* ==========================================================
+   ICON BUTTON
+   ========================================================== */
+
+.button-icon{
+
+    width:44px;
+
+    height:44px;
+
+    padding:0;
+
+    border-radius:var(--radius-round);
+
+}
+
+
+/* ==========================================================
+   FULL WIDTH BUTTON
+   ========================================================== */
+
+.button-block{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   DISABLED BUTTON
+   ========================================================== */
+
+.button:disabled{
+
+    opacity:0.6;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+    transform:none;
+
+    box-shadow:none;
+
+}

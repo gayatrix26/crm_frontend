@@ -1,0 +1,57 @@
+/* ==========================================================
+   THEME
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   DEFAULT THEME
+   ========================================================== */
+
+html{
+    color-scheme: light;
+}
+
+
+/* ==========================================================
+   DARK THEME
+   ========================================================== */
+
+html.dark-theme{
+    color-scheme: dark;
+}
+
+
+/* ==========================================================
+   THEME TRANSITION
+   ========================================================== */
+
+html,
+body,
+header,
+footer,
+main,
+section,
+article,
+aside,
+nav,
+div,
+button,
+input,
+select,
+textarea,
+table,
+th,
+td,
+mat-card,
+mat-toolbar,
+mat-form-field,
+mat-table{
+
+    transition:
+    background-color var(--transition-medium),
+    color var(--transition-medium),
+    border-color var(--transition-medium),
+    box-shadow var(--transition-medium);
+
+}

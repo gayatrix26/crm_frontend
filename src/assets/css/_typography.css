@@ -1,0 +1,217 @@
+/* ==========================================================
+   TYPOGRAPHY
+   CRM FRONTEND
+   ========================================================== */
+
+
+
+/* ==========================================================
+   BODY
+   ========================================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:var(--font-medium);
+
+    font-weight:var(--weight-regular);
+
+    color:var(--text-color);
+
+    background:var(--background-color);
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================================================
+   HEADING
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--text-color);
+
+    font-weight:var(--weight-bold);
+
+    line-height:1.2;
+
+    margin-bottom:var(--spacing-medium);
+
+}
+
+h1{
+
+    font-size:var(--heading-large);
+
+}
+
+h2{
+
+    font-size:var(--heading-medium);
+
+}
+
+h3{
+
+    font-size:var(--heading-small);
+
+}
+
+h4{
+
+    font-size:var(--font-extra-large);
+
+}
+
+h5{
+
+    font-size:var(--font-large);
+
+}
+
+h6{
+
+    font-size:var(--font-medium);
+
+}
+
+
+/* ==========================================================
+   PARAGRAPH
+   ========================================================== */
+
+p{
+
+    color:var(--text-light-color);
+
+    margin-bottom:var(--spacing-medium);
+
+}
+
+
+/* ==========================================================
+   SMALL TEXT
+   ========================================================== */
+
+small{
+
+    font-size:var(--font-small);
+
+    color:var(--text-muted-color);
+
+}
+
+
+/* ==========================================================
+   STRONG TEXT
+   ========================================================== */
+
+strong{
+
+    font-weight:var(--weight-bold);
+
+}
+
+
+/* ==========================================================
+   EMPHASIS
+   ========================================================== */
+
+em{
+
+    font-style:italic;
+
+}
+
+
+/* ==========================================================
+   CODE
+   ========================================================== */
+
+code{
+
+    font-family:monospace;
+
+}
+
+
+/* ==========================================================
+   HORIZONTAL RULE
+   ========================================================== */
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border-color);
+
+    margin:var(--spacing-large) 0;
+
+}
+
+
+/* ==========================================================
+   TEXT UTILITY
+   ========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.text-primary{
+
+    color:var(--primary-color);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary-color);
+
+}
+
+.text-success{
+
+    color:var(--success-color);
+
+}
+
+.text-warning{
+
+    color:var(--warning-color);
+
+}
+
+.text-danger{
+
+    color:var(--danger-color);
+
+}
+
+.text-muted{
+
+    color:var(--text-muted-color);
+
+}

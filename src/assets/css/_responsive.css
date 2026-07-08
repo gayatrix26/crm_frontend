@@ -1,0 +1,85 @@
+/* ==========================================================
+   RESPONSIVE
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   DESKTOP
+   ========================================================== */
+
+@media (min-width:1200px){
+
+    .desktop-only{
+
+        display:block !important;
+
+    }
+
+    .tablet-only{
+
+        display:none !important;
+
+    }
+
+    .mobile-only{
+
+        display:none !important;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width:768px) and (max-width:1199px){
+
+    .desktop-only{
+
+        display:none !important;
+
+    }
+
+    .tablet-only{
+
+        display:block !important;
+
+    }
+
+    .mobile-only{
+
+        display:none !important;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width:767px){
+
+    .desktop-only{
+
+        display:none !important;
+
+    }
+
+    .tablet-only{
+
+        display:none !important;
+
+    }
+
+    .mobile-only{
+
+        display:block !important;
+
+    }
+
+}
