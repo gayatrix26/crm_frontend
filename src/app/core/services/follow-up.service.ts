@@ -9,7 +9,7 @@ import { FollowUp } from '../../models/interfaces/follow-up.model';
 })
 export class FollowUpService {
 
-  private readonly apiUrl = 'http://localhost:8080/api/follow-ups';
+  private readonly apiUrl = 'https://crmbackend-production-56ef.up.railway.app/api/follow-ups';
 
   constructor(private http: HttpClient) { }
 

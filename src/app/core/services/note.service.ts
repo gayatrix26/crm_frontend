@@ -9,7 +9,7 @@ import { Note } from '../../models/interfaces/note.model';
 })
 export class NoteService {
 
-  private readonly apiUrl = 'http://localhost:8080/api/notes';
+  private readonly apiUrl = 'https://crmbackend-production-56ef.up.railway.app/api/notes';
 
   constructor(private http: HttpClient) { }
 

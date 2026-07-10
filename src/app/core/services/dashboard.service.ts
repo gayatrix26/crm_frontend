@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class DashboardService {
 
 
-  private baseUrl = 'http://localhost:8080/api/dashboard';
+  private baseUrl = 'https://crmbackend-production-56ef.up.railway.app/api/dashboard';
 
 
   constructor(

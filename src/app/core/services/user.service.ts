@@ -10,7 +10,7 @@ import { PageResponse } from '../../models/interfaces/page-response.model';
 })
 export class UserService {
 
-  private readonly apiUrl = 'http://localhost:8080/api/users';
+  private readonly apiUrl = 'https://crmbackend-production-56ef.up.railway.app/api/users';
 
   constructor(private http: HttpClient) { }
 

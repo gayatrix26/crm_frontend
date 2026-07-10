@@ -14,7 +14,7 @@ import { LeadStatus } from '../../models/enums/lead-status.enum';
 })
 export class LeadService {
 
-  private readonly apiUrl = 'http://localhost:8080/api/leads';
+  private readonly apiUrl = 'https://crmbackend-production-56ef.up.railway.app/api/leads';
 
   constructor(private http: HttpClient) { }
 

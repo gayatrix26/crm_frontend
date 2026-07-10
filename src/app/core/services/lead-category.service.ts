@@ -9,7 +9,7 @@ import { LeadCategory } from '../../models/interfaces/lead-category.model';
 })
 export class LeadCategoryService {
 
-  private readonly apiUrl = 'http://localhost:8080/api/lead-categories';
+  private readonly apiUrl = 'https://crmbackend-production-56ef.up.railway.app/api/lead-categories';
 
   constructor(private http: HttpClient) { }
 
