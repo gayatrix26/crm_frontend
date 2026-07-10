@@ -1,0 +1,90 @@
+<section class="chart-card">
+
+
+    <div class="chart-header">
+
+        <h2>Lead Status Distribution</h2>
+
+        <p>Current lead status overview</p>
+
+    </div>
+
+
+
+    <div class="chart-container">
+
+
+        <canvas
+
+        baseChart
+
+        [data]="doughnutChartData"
+
+        [options]="doughnutChartOptions"
+
+        type="doughnut">
+
+        </canvas>
+
+
+    </div>
+
+
+
+
+    <div class="chart-legend">
+
+
+        <div class="legend-item">
+
+            <span class="legend-color new"></span>
+
+            <span>New</span>
+
+        </div>
+
+
+        <div class="legend-item">
+
+            <span class="legend-color contacted"></span>
+
+            <span>Contacted</span>
+
+        </div>
+
+
+
+        <div class="legend-item">
+
+            <span class="legend-color qualified"></span>
+
+            <span>Qualified</span>
+
+        </div>
+
+
+
+        <div class="legend-item">
+
+            <span class="legend-color lost"></span>
+
+            <span>Lost</span>
+
+        </div>
+
+
+
+        <div class="legend-item">
+
+            <span class="legend-color closed"></span>
+
+            <span>Closed</span>
+
+        </div>
+
+
+    </div>
+
+
+
+</section>

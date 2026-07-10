@@ -1,0 +1,321 @@
+/* ==========================================================
+   PAGE
+   ========================================================== */
+
+.page{
+
+    padding:var(--spacing-large);
+
+    min-height:100%;
+
+}
+
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:var(--spacing-large);
+
+}
+
+
+
+.page-title{
+
+    margin:0;
+
+    font-size:var(--font-xl);
+
+    font-weight:var(--weight-bold);
+
+    color:var(--text-color);
+
+}
+
+
+
+.page-description{
+
+    margin-top:8px;
+
+    color:var(--text-light-color);
+
+    font-size:var(--font-medium);
+
+}
+
+
+
+/* ==========================================================
+   ADD BUTTON
+   ========================================================== */
+
+.button-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:var(--radius-medium);
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-weight:var(--weight-semibold);
+
+    cursor:pointer;
+
+    transition:var(--transition-medium);
+
+}
+
+
+
+.button-primary:hover{
+
+    background:var(--primary-dark-color);
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.button-primary span{
+
+    font-size:20px;
+
+}
+
+
+
+/* ==========================================================
+   CATEGORY GRID
+   ========================================================== */
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:var(--spacing-large);
+
+}
+
+
+
+/* ==========================================================
+   CARD
+   ========================================================== */
+
+.category-card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    box-shadow:var(--glass-shadow);
+
+    padding:var(--spacing-medium);
+
+    transition:var(--transition-medium);
+
+}
+
+
+
+.category-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* ==========================================================
+   CARD HEADER
+   ========================================================== */
+
+.card-header{
+
+    border-bottom:1px solid var(--border-color);
+
+    padding-bottom:12px;
+
+}
+
+
+
+.card-title{
+
+    margin:0;
+
+    color:var(--text-color);
+
+    font-size:var(--font-large);
+
+}
+
+
+
+/* ==========================================================
+   CARD BODY
+   ========================================================== */
+
+.card-body{
+
+    padding:18px 0;
+
+}
+
+
+
+.card-body p{
+
+    color:var(--text-light-color);
+
+}
+
+
+
+/* ==========================================================
+   CARD FOOTER
+   ========================================================== */
+
+.card-footer{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.button-outline,
+.button-danger{
+
+    padding:8px 18px;
+
+    border-radius:var(--radius-small);
+
+    cursor:pointer;
+
+    font-weight:var(--weight-medium);
+
+    transition:var(--transition-medium);
+
+}
+
+
+
+.button-outline{
+
+    background:transparent;
+
+    border:1px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+}
+
+
+
+.button-outline:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+
+
+.button-danger{
+
+    background:transparent;
+
+    border:1px solid var(--danger-color);
+
+    color:var(--danger-color);
+
+}
+
+
+
+.button-danger:hover{
+
+    background:var(--danger-color);
+
+    color:white;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media(max-width:992px){
+
+
+    .category-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+
+    .category-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}

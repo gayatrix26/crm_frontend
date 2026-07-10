@@ -1,0 +1,76 @@
+/* ==========================================================
+   DASHBOARD
+   ========================================================== */
+
+:host{
+
+    display:block;
+
+}
+
+.dashboard{
+
+    position:relative;
+
+    padding:2rem;
+
+}
+
+.dashboard::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    top:-250px;
+
+    right:-250px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124,58,237,.15),
+            transparent 70%
+        );
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================================
+   CHARTS
+   ========================================================== */
+
+.dashboard-charts{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:var(--spacing-large);
+
+    margin-bottom:var(--spacing-large);
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media(max-width:1199px){
+
+    .dashboard-charts{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

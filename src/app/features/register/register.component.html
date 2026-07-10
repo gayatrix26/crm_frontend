@@ -1,0 +1,164 @@
+<div class="register-page">
+
+    <div class="register-card">
+
+        <!-- Header -->
+
+        <div class="register-header">
+
+            <h1>Create Account</h1>
+
+            <p>Create your CRM account</p>
+
+        </div>
+
+        <!-- Error -->
+
+        <div
+            class="error-message"
+            *ngIf="errorMessage">
+
+            {{ errorMessage }}
+
+        </div>
+
+        <!-- Form -->
+
+        <form
+            [formGroup]="registerForm"
+            (ngSubmit)="onRegister()">
+
+            <div class="row">
+
+                <div class="form-group">
+
+                    <label>First Name</label>
+
+                    <input
+                        type="text"
+                        formControlName="firstName"
+                        placeholder="John">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Last Name</label>
+
+                    <input
+                        type="text"
+                        formControlName="lastName"
+                        placeholder="Doe">
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Username</label>
+
+                <input
+                    type="text"
+                    formControlName="username"
+                    placeholder="Username">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    formControlName="email"
+                    placeholder="example@email.com">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Phone Number</label>
+
+                <input
+                    type="text"
+                    maxlength="10"
+                    formControlName="phoneNo"
+                    placeholder="9876543210">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                <div class="password-box">
+
+                    <input
+
+                        [type]="showPassword ? 'text' : 'password'"
+
+                        formControlName="password"
+
+                        placeholder="Password">
+
+                    <button
+
+                        type="button"
+
+                        class="eye-btn"
+
+                        (click)="togglePassword()">
+
+                        <i
+
+                            class="bi"
+
+                            [ngClass]="showPassword ? 'bi-eye-slash' : 'bi-eye'">
+
+                        </i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+  class="validation-error"
+  *ngIf="registerForm.get('password')?.touched &&
+         registerForm.get('password')?.hasError('minlength')">
+
+  Password must be at least 8 characters.
+
+</div>
+
+            <button
+
+                class="register-btn"
+
+                type="submit"
+
+                [disabled]="loading">
+
+                {{ loading ? 'Creating Account...' : 'Create Account' }}
+
+            </button>
+
+        </form>
+
+        <div class="bottom-text">
+
+            Already have an account?
+
+            <a routerLink="/login">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

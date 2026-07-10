@@ -1,0 +1,89 @@
+<div class="filter-wrapper">
+
+
+    <!-- FILTER ICON -->
+
+    <button
+        class="filter-button"
+        (click)="toggleDropdown()">
+
+
+        <i
+
+        class="bi"
+
+        [ngClass]="
+        selectedOption 
+        ? 'bi-funnel-fill'
+        : 'bi-funnel'
+        ">
+
+        </i>
+
+
+    </button>
+
+
+
+    <!-- DROPDOWN -->
+
+    <div
+
+    class="filter-dropdown"
+
+    *ngIf="dropdownOpen">
+
+
+        <div class="filter-header">
+
+            <span>
+
+                {{title}}
+
+            </span>
+
+
+            <button
+
+            *ngIf="selectedOption"
+
+            class="clear-btn"
+
+            (click)="clearFilter()">
+
+                Clear
+
+            </button>
+
+
+        </div>
+
+
+
+        <div class="filter-options">
+
+
+            <button
+
+            class="filter-option"
+
+            *ngFor="let option of options"
+
+            [class.active]="option===selectedOption"
+
+            (click)="selectFilter(option)">
+
+
+                {{option}}
+
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>

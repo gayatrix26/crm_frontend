@@ -1,0 +1,67 @@
+<div class="page animation-fade-in">
+
+    <div class="container">
+
+        <!-- PAGE HEADER -->
+
+        <div class="page-header lead-header">
+
+            <div>
+
+                <h2 class="page-title">
+                    <i class="bi bi-person-lines-fill"></i>
+                    Lead Management
+                </h2>
+
+                <p class="page-description">
+                    View, search, filter and manage customer leads.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- TABLE CARD -->
+
+        <div class="card animation-slide-up">
+
+            <div class="card-header lead-toolbar">
+
+                <div class="search-bar">
+
+  <input
+    type="text"
+    placeholder="Search leads..."
+    [(ngModel)]="searchKeyword"
+    (keyup)="searchLeads()">
+
+</div>
+
+                <app-add-lead
+                (leadCreated)="loadLeads()">
+                </app-add-lead>
+            </div>
+
+            <div class="card lead-table-card">
+
+            <app-lead-table
+
+    [leads]="leads"
+
+    [totalElements]="totalElements"
+
+    [pageSize]="pageSize"
+
+    (pageChanged)="changePage($event)"
+
+    (leadChanged)="loadLeads()"
+    (leadDeleted)="deleteLead($event)">
+
+</app-lead-table>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

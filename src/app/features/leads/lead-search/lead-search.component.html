@@ -1,0 +1,42 @@
+<div class="search-container">
+
+
+    <div class="search-box">
+
+
+        <i class="bi bi-search search-icon"></i>
+
+
+        <input
+
+        type="text"
+
+        class="form-input search-input"
+
+        placeholder="Search leads..."
+
+        [(ngModel)]="searchText"
+
+        (input)="onSearch()">
+
+
+
+        <button
+
+        *ngIf="searchText"
+
+        class="clear-button"
+
+        (click)="clearSearch()">
+
+
+            <i class="bi bi-x-circle"></i>
+
+
+        </button>
+
+
+    </div>
+
+
+</div>

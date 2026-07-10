@@ -41,3 +41,5 @@
 @import "./assets/css/_utility.css";
 @import "./assets/css/_animation.css";
 @import "./assets/css/_responsive.css";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";

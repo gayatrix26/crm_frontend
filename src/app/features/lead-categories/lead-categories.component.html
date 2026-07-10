@@ -1,0 +1,86 @@
+<div class="page">
+
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+
+
+        <div class="header-content">
+
+            <h1 class="page-title">
+                Lead Categories
+            </h1>
+
+            <p class="page-description">
+                Manage sectors and industries (Healthcare, Education, Automotive, etc.)
+            </p>
+
+        </div>
+
+
+
+        <button class="button-primary">
+
+            <span class="material-symbols-outlined">
+                add
+            </span>
+
+            Add Category
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- CATEGORY CARDS -->
+
+    <div class="category-grid">
+
+
+        <div class="category-card" 
+             *ngFor="let category of categories">
+
+
+            <div class="card-header">
+
+                <h3 class="card-title">
+                    {{ category }}
+                </h3>
+
+            </div>
+
+
+
+            <div class="card-body">
+
+                <p>
+                    Description for this sector will appear here.
+                </p>
+
+            </div>
+
+
+
+            <div class="card-footer">
+
+                <button class="button-outline">
+                    Edit
+                </button>
+
+
+                <button class="button-danger">
+                    Delete
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>

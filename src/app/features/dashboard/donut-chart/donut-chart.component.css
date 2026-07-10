@@ -1,0 +1,187 @@
+/* ==========================================================
+   CHART CARD
+   ========================================================== */
+
+.chart-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--spacing-large);
+
+    padding:var(--spacing-large);
+
+    background:var(--glass-background);
+
+    backdrop-filter:var(--glass-blur);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:var(--radius-large);
+
+    box-shadow:var(--glass-shadow);
+
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.chart-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--spacing-small);
+
+}
+
+
+.chart-header h2{
+
+    font-size:var(--font-large);
+
+    color:var(--text-color);
+
+}
+
+
+.chart-header p{
+
+    color:var(--text-light-color);
+
+}
+
+
+/* ==========================================================
+   CHART
+   ========================================================== */
+
+.chart-container{
+
+    height:280px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+/* ==========================================================
+   LEGEND
+   ========================================================== */
+
+.chart-legend{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:var(--spacing-small);
+
+}
+
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.legend-color{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+}
+
+
+/* ==========================================================
+   STATUS COLORS
+   ========================================================== */
+
+.legend-color.new{
+
+    background:#6366f1;
+
+}
+
+.legend-color.contacted{
+
+    background:#0ea5e9;
+
+}
+
+.legend-color.qualified{
+
+    background:#22c55e;
+
+}
+
+.legend-color.lost{
+
+    background:#ef4444;
+
+}
+
+.legend-color.closed{
+
+    background:#f59e0b;
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width:1199px){
+
+    .chart-container{
+
+        height:250px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width:767px){
+
+    .chart-card{
+
+        padding:var(--spacing-medium);
+
+    }
+
+    .chart-container{
+
+        height:220px;
+
+    }
+
+    .chart-legend{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

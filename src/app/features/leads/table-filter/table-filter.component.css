@@ -1,0 +1,191 @@
+/* ==========================================================
+   FILTER WRAPPER
+========================================================== */
+
+.filter-wrapper{
+
+    position:relative;
+
+    display:inline-flex;
+
+    z-index:9999;
+
+}
+
+
+
+/* ==========================================================
+   FILTER BUTTON
+========================================================== */
+
+.filter-button{
+
+    width:28px;
+
+    height:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--text-inverse-color);
+
+    cursor:pointer;
+
+    border-radius:var(--radius-round);
+
+    transition:var(--transition-fast);
+
+}
+
+
+.filter-button:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+.filter-button i{
+
+    font-size:14px;
+
+}
+
+
+
+/* ==========================================================
+   DROPDOWN
+========================================================== */
+
+.filter-dropdown{
+
+    position:absolute;
+
+    top:40px;
+
+    right:0;
+
+    width:220px;
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    box-shadow:var(--shadow-large);
+
+    z-index: 99999;
+
+    animation:scale-in .2s ease;
+
+}
+
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.filter-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 16px;
+
+    border-bottom:1px solid var(--border-color);
+
+    font-weight:var(--weight-semi-bold);
+
+}
+
+
+
+/* ==========================================================
+   CLEAR BUTTON
+========================================================== */
+
+.clear-btn{
+
+    color:var(--danger-color);
+
+    font-size:var(--font-small);
+
+}
+
+
+
+/* ==========================================================
+   OPTIONS
+========================================================== */
+
+.filter-options{
+
+    padding:8px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.filter-option{
+
+    text-align:left;
+
+    padding:10px 12px;
+
+    border-radius:var(--radius-small);
+
+    color:var(--text-color);
+
+    cursor:pointer;
+
+    transition:var(--transition-fast);
+
+}
+
+
+
+.filter-option:hover{
+
+    background:rgba(124,58,237,.1);
+
+}
+
+
+
+.filter-option.active{
+
+    background:var(--primary-light-color);
+
+    color:var(--primary-dark-color);
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .filter-dropdown{
+
+        width:200px;
+
+        right:-40px;
+
+    }
+
+}

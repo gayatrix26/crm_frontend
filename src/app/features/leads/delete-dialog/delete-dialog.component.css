@@ -1,0 +1,231 @@
+/* ==========================================================
+   DELETE DIALOG
+   CRM FRONTEND
+========================================================== */
+
+
+
+.dialog-overlay{
+
+
+    position:fixed;
+
+
+    inset:0;
+
+
+    background:
+
+    rgba(0,0,0,.45);
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+    z-index:var(--z-modal);
+
+
+    animation:fade-in .3s ease;
+
+
+}
+
+
+
+
+
+
+.delete-dialog{
+
+
+    width:100%;
+
+
+    max-width:420px;
+
+
+    background:var(--card-color);
+
+
+    border-radius:var(--radius-large);
+
+
+    padding:var(--spacing-extra-large);
+
+
+    text-align:center;
+
+
+    box-shadow:var(--shadow-large);
+
+
+    animation:scale-in .3s ease;
+
+
+}
+
+
+
+
+
+
+
+.warning-icon{
+
+
+    width:70px;
+
+
+    height:70px;
+
+
+    margin:auto;
+
+
+    border-radius:50%;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    background:
+
+    rgba(239,68,68,.15);
+
+
+    color:var(--danger-color);
+
+
+    font-size:32px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+
+
+.delete-dialog h2{
+
+
+    margin-bottom:12px;
+
+
+}
+
+
+
+
+
+
+.delete-dialog p{
+
+
+    color:var(--text-light-color);
+
+
+}
+
+
+
+
+
+
+.delete-dialog strong{
+
+
+    color:var(--text-color);
+
+
+}
+
+
+
+
+
+
+.delete-dialog small{
+
+
+    display:block;
+
+
+    margin-top:10px;
+
+
+}
+
+
+
+
+
+
+
+.dialog-actions{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+    margin-top:30px;
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+.dialog-actions{
+
+
+    flex-direction:column-reverse;
+
+
+}
+
+
+
+.dialog-actions button{
+
+
+    width:100%;
+
+
+}
+
+
+
+}

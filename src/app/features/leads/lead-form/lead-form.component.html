@@ -1,0 +1,638 @@
+<div class="page animation-fade-in">
+
+
+    <div class="container">
+
+
+        <div class="card lead-form-card">
+
+
+            <!-- ================================
+                 HEADER
+            ================================= -->
+
+            <div class="card-header">
+
+
+                <div>
+
+                    <h2 class="card-title">
+
+                        {{isEditMode ? 'Update Lead' : 'Add New Lead'}}
+
+                    </h2>
+
+
+                    <p class="card-subtitle">
+
+                        Create and manage customer leads
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 BODY
+            ================================= -->
+
+            <div class="card-body">
+
+
+                <form
+
+                [formGroup]="leadForm"
+
+                class="form"
+
+                (ngSubmit)="submitLead()">
+
+
+
+                    <!-- ==========================
+                         ROW 1
+                    =========================== -->
+
+                    <div class="form-row">
+
+
+                        <!-- CUSTOMER NAME -->
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Customer Name
+
+                                <span class="form-required">
+
+                                    *
+
+                                </span>
+
+                            </label>
+
+
+                            <input
+
+                            class="form-input"
+
+                            type="text"
+
+                            placeholder="Enter customer name"
+
+                            formControlName="customerName">
+
+
+
+                            <span
+
+                            class="form-error"
+
+                            *ngIf="
+
+                            leadForm.get('customerName')?.touched
+
+                            &&
+
+                            leadForm.get('customerName')?.invalid">
+
+                                Customer name is required
+
+                            </span>
+
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Phone Number
+
+                                <span class="form-required">
+
+                                    *
+
+                                </span>
+
+                            </label>
+
+
+                            <input
+
+                            class="form-input"
+
+                            type="text"
+
+                            placeholder="10 digit phone number"
+
+                            formControlName="phoneNo">
+
+
+
+                            <span
+
+                            class="form-error"
+
+                            *ngIf="leadForm.get('phoneNo')?.touched
+
+                            &&
+
+                            leadForm.get('phoneNo')?.invalid">
+
+                                Enter valid phone number
+
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!-- ==========================
+                         ROW 2
+                    =========================== -->
+
+                    <div class="form-row">
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Email
+
+                            </label>
+
+
+                            <input
+
+                            class="form-input"
+
+                            type="email"
+
+                            placeholder="example@mail.com"
+
+                            formControlName="email">
+
+
+
+                            <span
+
+                            class="form-error"
+
+                            *ngIf="leadForm.get('email')?.touched
+
+                            &&
+
+                            leadForm.get('email')?.invalid">
+
+                                Invalid email address
+
+                            </span>
+
+
+                        </div>
+
+
+
+
+                       <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+
+                        <label class="form-label">
+
+                            Category
+
+                            <span class="form-required">
+
+                                *
+
+                            </span>
+
+                        </label>
+
+
+                        <select
+
+                        class="form-select"
+
+                        formControlName="category">
+
+
+                            <option [ngValue]="null">
+
+                                Select category
+
+                            </option>
+
+
+                            <option
+
+                            *ngFor="let category of categories"
+
+                            [ngValue]="category">
+
+
+                                {{category.categoryName}}
+
+
+                            </option>
+
+
+                        </select>
+                    </div>
+
+                    </div>
+
+
+
+
+                    <!-- ==========================
+                         ROW 3
+                    =========================== -->
+
+
+                    <div class="form-row">
+
+
+                        <!-- CITY -->
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                City
+
+                            </label>
+
+
+                            <input
+
+                            class="form-input"
+
+                            placeholder="Enter city"
+
+                            formControlName="city">
+
+
+                        </div>
+
+
+
+
+                        <!-- DATE -->
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Created Date
+
+                            </label>
+
+
+                            <input
+
+                            class="form-input"
+
+                            type="date"
+
+                            formControlName="createdDate">
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                    <!-- ==========================
+                         ADDRESS
+                    =========================== -->
+
+
+                    <div class="form-group">
+
+
+                        <label class="form-label">
+
+                            Address
+
+                        </label>
+
+
+                        <textarea
+
+                        class="form-textarea"
+
+                        placeholder="Enter address"
+
+                        formControlName="address">
+
+                        </textarea>
+
+
+                    </div>
+
+
+
+
+
+
+                    <!-- ==========================
+                         ROW 4
+                    =========================== -->
+
+
+                    <div class="form-row">
+
+
+
+                        <!-- SOURCE -->
+
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Lead Source
+
+                                <span class="form-required">
+
+                                    *
+
+                                </span>
+
+                            </label>
+
+
+                            <select
+
+                            class="form-select"
+
+                            formControlName="leadSource">
+
+
+                                <option value="">
+
+                                    Select source
+
+                                </option>
+
+
+                                <option
+
+                                *ngFor="let source of sources"
+
+                                [value]="source">
+
+
+                                    {{source}}
+
+                                </option>
+
+
+                            </select>
+
+
+                        </div>
+
+
+
+
+
+                        <!-- EXECUTIVE -->
+
+<div class="form-group">
+
+
+    <label class="form-label">
+
+        Assigned Executive
+
+        <span class="form-required">
+
+            *
+
+        </span>
+
+    </label>
+
+
+    <select
+
+    class="form-select"
+
+    formControlName="assignedTo">
+
+
+        <option [ngValue]="null">
+
+            Select executive
+
+        </option>
+
+
+        <option
+
+        *ngFor="let executive of executives"
+
+        [ngValue]="executive">
+
+
+            {{executive.firstName}}
+
+            {{executive.lastName}}
+
+
+        </option>
+
+
+    </select>
+</div>
+
+</div>
+
+
+
+
+                    <!-- ==========================
+                         ROW 5
+                    =========================== -->
+
+
+                    <div class="form-row">
+
+
+
+                        <!-- STATUS -->
+
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Status
+
+                            </label>
+
+
+                            <select
+
+                            class="form-select"
+
+                            formControlName="status">
+
+
+                                <option
+
+                                *ngFor="let status of statuses"
+
+                                [value]="status">
+
+
+                                    {{status}}
+
+                                </option>
+
+
+                            </select>
+
+
+                        </div>
+
+
+
+
+
+
+                        <!-- PRIORITY -->
+
+
+                        <div class="form-group">
+
+
+                            <label class="form-label">
+
+                                Priority
+
+                            </label>
+
+
+                            <select
+
+                            class="form-select"
+
+                            formControlName="priority">
+
+
+                                <option
+
+                                *ngFor="let priority of priorities"
+
+                                [value]="priority">
+
+
+                                    {{priority}}
+
+                                </option>
+
+
+                            </select>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                    <!-- ==========================
+                         ACTION BUTTONS
+                    =========================== -->
+
+
+                    <div class="form-action">
+
+
+                        <button
+
+                        type="button"
+
+                        class="button button-outline"
+
+                        (click)="cancel()">
+
+
+                            Cancel
+
+
+                        </button>
+
+
+
+
+
+                        <button
+
+                        type="submit"
+
+                        class="button button-primary">
+
+
+                            {{isEditMode ? 'Update Lead' : 'Save Lead'}}
+
+
+                        </button>
+
+
+                    </div>
+
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>

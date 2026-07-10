@@ -1,0 +1,158 @@
+.chart-card{
+
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+.chart-header h2{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#4c1d95;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.chart-header p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.chart-container{
+
+    height:260px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.chart-container canvas{
+
+    max-width:260px;
+
+}
+
+
+
+
+
+.chart-legend{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:7px;
+
+    font-size:13px;
+
+    color:#555;
+
+}
+
+
+
+
+
+.legend-color{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+.legend-color.new{
+
+    background:#8b5cf6;
+
+}
+
+
+
+.legend-color.contacted{
+
+    background:#3b82f6;
+
+}
+
+
+
+.legend-color.qualified{
+
+    background:#22c55e;
+
+}
+
+
+
+.legend-color.lost{
+
+    background:#ef4444;
+
+}
+
+
+
+.legend-color.closed{
+
+    background:#f59e0b;
+
+}

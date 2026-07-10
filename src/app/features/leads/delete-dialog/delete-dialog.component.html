@@ -1,0 +1,126 @@
+<div
+
+class="dialog-overlay"
+
+*ngIf="visible">
+
+
+
+
+
+<div class="delete-dialog">
+
+
+
+
+
+<!-- ICON -->
+
+<div class="warning-icon">
+
+
+<i class="bi bi-exclamation-triangle-fill"></i>
+
+
+</div>
+
+
+
+
+
+<h2>
+
+Delete Lead?
+
+</h2>
+
+
+
+
+
+<p>
+
+
+Are you sure you want to delete
+
+
+<strong>
+
+{{leadName}}
+
+</strong>
+
+
+?
+
+
+</p>
+
+
+
+
+
+<small>
+
+This action cannot be undone.
+
+</small>
+
+
+
+
+
+
+
+
+<div class="dialog-actions">
+
+
+
+<button
+
+class="button button-outline"
+
+(click)="cancel()">
+
+
+Cancel
+
+
+</button>
+
+
+
+
+
+
+<button
+
+class="button button-danger"
+
+(click)="confirmDelete()">
+
+
+
+<i class="bi bi-trash"></i>
+
+
+Delete
+
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>

@@ -1,0 +1,55 @@
+<header class="navbar">
+
+    <!-- ==========================
+         LEFT SECTION
+    =========================== -->
+
+    <div class="navbar-left">
+
+       <button
+            class="hamburger-btn"
+            (click)="onToggleSidebar()">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+        <div class="navbar-brand">
+            <i class="bi bi-tropical-storm"></i>
+            <span>Tap CRM</span>
+        </div>
+
+    </div>
+
+
+    <!-- ==========================
+         ACTIONS
+    =========================== -->
+
+    <div class="navbar-actions">
+
+
+        <!-- Profile -->
+        <button class="navbar-icon" 
+                title="Profile"
+                routerLink="/app/profile">
+            <i class="bi bi-person-circle"></i>
+        </button>
+
+        <!-- Dark Mode -->
+        <button class="navbar-icon" 
+                title="Toggle Theme"
+                (click)="onToggleDarkMode()">
+            <i [class]="darkMode ? 'bi bi-sun-fill' : 'bi bi-moon-stars'"></i>
+        </button>
+
+        <!-- Logout -->
+        <button class="navbar-icon" 
+                title="Logout"
+                (click)="onLogout()">
+            <i class="bi bi-box-arrow-right"></i>
+        </button>
+
+    </div>
+
+</header>

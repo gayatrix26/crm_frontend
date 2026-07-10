@@ -1,0 +1,93 @@
+<aside
+    class="sidebar"
+    [class.collapsed]="isCollapsed"
+    [class.mobile-open]="isMobileOpen">
+
+    <!-- Toggle Button -->
+
+    <button
+    class="sidebar-toggle"
+    (click)="isCollapsed = !isCollapsed">
+
+    <i
+        class="bi"
+        [ngClass]="isCollapsed
+        ? 'bi-chevron-double-right'
+        : 'bi-chevron-double-left'">
+
+    </i>
+
+    </button>
+
+
+    <!-- Navigation -->
+
+    <nav class="sidebar-nav">
+
+        <a routerLink="/app/dashboard"
+           routerLinkActive="active"
+           class="sidebar-link">
+
+            <i class="bi bi-house-door"></i>
+
+            <span *ngIf="!isCollapsed">
+                Home
+            </span>
+
+        </a>
+
+
+        <a routerLink="/app/leads"
+           routerLinkActive="active"
+           class="sidebar-link">
+
+            <i class="bi bi-people"></i>
+
+            <span *ngIf="!isCollapsed">
+                Leads
+            </span>
+
+        </a>
+
+
+        <a routerLink="/app/lead-categories"
+           routerLinkActive="active"
+           class="sidebar-link">
+
+            <i class="bi bi-tags"></i>
+
+            <span *ngIf="!isCollapsed">
+                Lead Categories
+            </span>
+
+        </a>
+
+
+        <a routerLink="/app/notes"
+           routerLinkActive="active"
+           class="sidebar-link">
+
+            <i class="bi bi-journal-text"></i>
+
+            <span *ngIf="!isCollapsed">
+                Notes
+            </span>
+
+        </a>
+
+
+        <a routerLink="/app/followups"
+           routerLinkActive="active"
+           class="sidebar-link">
+
+            <i class="bi bi-telephone"></i>
+
+            <span *ngIf="!isCollapsed">
+                Followups
+            </span>
+
+        </a>
+
+    </nav>
+
+</aside>

@@ -1,0 +1,463 @@
+/* ==========================================================
+   PAGE
+   ========================================================== */
+
+
+.page{
+
+    padding:var(--spacing-large);
+
+}
+
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.page-title{
+
+    margin:0;
+
+    color:var(--text-color);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+
+
+.page-description{
+
+    margin-top:8px;
+
+    color:var(--text-light-color);
+
+}
+
+
+
+/* ==========================================================
+   BUTTON
+   ========================================================== */
+
+
+.button-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.button-primary:hover{
+
+    background:var(--primary-dark-color);
+
+}
+
+
+
+
+
+/* ==========================================================
+   KANBAN
+   ========================================================== */
+
+
+.kanban-board{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.kanban-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.column-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.column-header h3{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+.cancelled{
+
+    color:var(--danger-color);
+
+}
+
+
+.pending{
+
+    color:var(--warning-color);
+
+}
+
+
+.completed{
+
+    color:var(--success-color);
+
+}
+
+
+
+
+
+.count{
+
+    width:30px;
+
+    height:30px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+
+
+.cancelled-count{
+
+    background:#fee2e2;
+
+    color:var(--danger-color);
+
+}
+
+
+
+.pending-count{
+
+    background:#fef3c7;
+
+    color:var(--warning-color);
+
+}
+
+
+
+.completed-count{
+
+    background:#dcfce7;
+
+    color:var(--success-color);
+
+}
+
+
+
+
+/* ==========================================================
+   COLUMN BODY
+   ========================================================== */
+
+
+.column-body{
+
+    min-height:500px;
+
+    background:var(--surface-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:20px;
+
+    padding:18px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   FOLLOW CARD
+   ========================================================== */
+
+
+.follow-card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    box-shadow:var(--glass-shadow);
+
+    transition:.3s;
+
+}
+
+
+
+.follow-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+
+
+.follow-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+}
+
+
+
+.follow-header h4{
+
+    margin:0;
+
+    color:var(--text-color);
+
+    font-size:1rem;
+
+}
+
+
+
+.follow-header span{
+
+    color:var(--text-muted-color);
+
+    font-size:.85rem;
+
+}
+
+
+
+
+.status{
+
+    height:max-content;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+}
+
+
+
+.pending-status{
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+}
+
+
+
+.completed-status{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+
+
+
+.follow-description{
+
+    margin:18px 0;
+
+    color:var(--text-light-color);
+
+    line-height:1.5;
+
+}
+
+
+
+
+.follow-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.due-date{
+
+    color:var(--text-muted-color);
+
+    font-size:.85rem;
+
+}
+
+
+
+
+.action-buttons{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+
+
+.action-buttons button{
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:var(--primary-light-color);
+
+    color:var(--primary-dark-color);
+
+    cursor:pointer;
+
+}
+
+
+
+.action-buttons button:hover{
+
+    background:var(--primary-color);
+
+    color:white;
+
+}
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+
+@media(max-width:1000px){
+
+    .kanban-board{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+@media(max-width:650px){
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+}

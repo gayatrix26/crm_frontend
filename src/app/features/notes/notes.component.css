@@ -1,0 +1,755 @@
+/* ==========================================================
+   PAGE
+   ========================================================== */
+
+
+.page{
+
+    padding:var(--spacing-large);
+
+}
+
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:var(--spacing-large);
+
+}
+
+
+
+.page-title{
+
+    color:var(--text-color);
+
+    font-size:var(--font-xl);
+
+    font-weight:var(--weight-bold);
+
+    margin:0;
+
+}
+
+
+
+.page-description{
+
+    color:var(--text-light-color);
+
+    margin-top:8px;
+
+}
+
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+   ========================================================== */
+
+
+.button-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:var(--radius-medium);
+
+    cursor:pointer;
+
+    transition:var(--transition-medium);
+
+}
+
+
+
+.button-primary:hover{
+
+    background:var(--primary-dark-color);
+
+}
+
+
+
+/* ==========================================================
+   NOTES GRID
+   ========================================================== */
+
+
+.notes-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:var(--spacing-large);
+
+}
+
+
+
+/* ==========================================================
+   NOTE CARD
+   ========================================================== */
+
+
+.note-card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:var(--radius-medium);
+
+    padding:var(--spacing-medium);
+
+    cursor:pointer;
+
+    box-shadow:var(--glass-shadow);
+
+    transition:var(--transition-medium);
+
+}
+
+
+
+.note-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+/* ==========================================================
+   NOTE HEADER
+   ========================================================== */
+
+
+.note-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+.note-title{
+
+    margin:0;
+
+    font-size:var(--font-large);
+
+    color:var(--text-color);
+
+}
+
+
+
+.note-date{
+
+    font-size:0.8rem;
+
+    color:var(--text-muted-color);
+
+    white-space:nowrap;
+
+}
+
+
+
+/* ==========================================================
+   NOTE BODY
+   ========================================================== */
+
+
+.note-body{
+
+    padding:18px 0;
+
+}
+
+
+
+.note-body p{
+
+    color:var(--text-light-color);
+
+    line-height:1.6;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:3;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+
+.note-footer{
+
+    color:var(--text-muted-color);
+
+    font-size:0.9rem;
+
+}
+
+
+
+/* ==========================================================
+   MODAL
+   ========================================================== */
+
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:1000;
+
+}
+
+
+
+.note-modal{
+
+    width:90%;
+
+    max-width:650px;
+
+    background:var(--card-color);
+
+    border-radius:var(--radius-medium);
+
+    box-shadow:var(--glass-shadow);
+
+}
+
+
+
+/* ==========================================================
+   MODAL HEADER
+   ========================================================== */
+
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+
+
+.modal-header h3{
+
+    color:var(--text-color);
+
+    margin:0;
+
+}
+
+
+
+.close-btn{
+
+    border:none;
+
+    background:none;
+
+    color:var(--text-muted-color);
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================================================
+   MODAL BODY
+   ========================================================== */
+
+
+.modal-body{
+
+    padding:20px;
+
+    color:var(--text-light-color);
+
+}
+
+
+
+.modal-details{
+
+    margin-top:25px;
+
+    padding-top:20px;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+
+
+/* ==========================================================
+   MODAL FOOTER
+   ========================================================== */
+
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    padding:20px;
+
+    border-top:1px solid var(--border-color);
+
+}
+
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+
+.button-secondary,
+.button-danger{
+
+    padding:10px 18px;
+
+    border-radius:var(--radius-small);
+
+    cursor:pointer;
+
+}
+
+
+
+.button-secondary{
+
+    background:transparent;
+
+    border:1px solid var(--border-color);
+
+    color:var(--text-color);
+
+}
+
+
+
+.button-danger{
+
+    background:var(--danger-color);
+
+    border:none;
+
+    color:white;
+
+}
+
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+
+@media(max-width:1000px){
+
+    .notes-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:600px){
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    .notes-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}/* ==========================================================
+   PAGE
+   ========================================================== */
+
+.page{
+
+    padding:var(--spacing-large);
+
+}
+
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+.page-title{
+
+    margin:0;
+
+    color:var(--text-color);
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+
+.page-description{
+
+    margin-top:8px;
+
+    color:var(--text-light-color);
+
+}
+
+
+
+
+/* ==========================================================
+   BUTTON
+   ========================================================== */
+
+.button-primary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.button-primary:hover{
+
+    background:var(--primary-dark-color);
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+/* ==========================================================
+   GRID
+   ========================================================== */
+
+
+.notes-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   CARD
+   ========================================================== */
+
+
+.note-card{
+
+    background:var(--card-color);
+
+    border:1px solid var(--border-color);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:var(--glass-shadow);
+
+    transition:.3s;
+
+}
+
+
+
+.note-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+
+
+/* ==========================================================
+   TOP
+   ========================================================== */
+
+
+.note-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.note-icon{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:var(--primary-light-color);
+
+    color:var(--primary-dark-color);
+
+}
+
+
+
+.note-icon i{
+
+    font-size:1.3rem;
+
+}
+
+
+
+.note-date{
+
+    font-size:.85rem;
+
+    color:var(--text-muted-color);
+
+}
+
+
+
+
+/* ==========================================================
+   CONTENT
+   ========================================================== */
+
+
+.note-title{
+
+    color:var(--text-color);
+
+    font-size:1.1rem;
+
+    margin-bottom:12px;
+
+}
+
+
+
+.note-content{
+
+    color:var(--text-light-color);
+
+    line-height:1.6;
+
+    min-height:75px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+
+.note-footer{
+
+    margin-top:20px;
+
+    padding-top:15px;
+
+    border-top:1px solid var(--border-color);
+
+    color:var(--text-muted-color);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:.9rem;
+
+}
+
+
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+
+@media(max-width:1000px){
+
+    .notes-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+
+@media(max-width:650px){
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+
+    .notes-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

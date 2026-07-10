@@ -1,0 +1,24 @@
+<app-navbar
+    (toggleSidebar)="toggleSidebar()"
+    (toggleReminder)="toggleReminder()"
+    (toggleNotifications)="toggleNotifications()">
+</app-navbar>
+
+<div class="layout-container">
+
+    <app-sidebar
+        [isCollapsed]="isSidebarCollapsed"
+        [isMobileOpen]="isMobileSidebarOpen">
+    </app-sidebar>
+
+    <main class="layout-content">
+        <router-outlet></router-outlet>
+    </main>
+
+    <!-- Floating Panels -->
+    <app-reminder *ngIf="showReminder"></app-reminder>
+    <app-notifications *ngIf="showNotifications"></app-notifications>
+
+</div>
+
+<app-footer></app-footer>

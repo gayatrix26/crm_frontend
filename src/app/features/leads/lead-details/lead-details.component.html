@@ -1,0 +1,327 @@
+<div class="page animation-fade-in">
+
+
+<div class="container">
+
+
+
+<div class="card details-card">
+
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+
+<div class="details-header">
+
+
+<div>
+
+
+<h2 class="details-name">
+
+{{lead.customerName}}
+
+</h2>
+
+
+<p class="details-subtitle">
+
+Lead ID : {{lead.leadId}}
+
+</p>
+
+
+</div>
+
+
+
+<div class="details-badges">
+
+
+<span
+
+class="badge"
+
+[ngClass]="{
+
+'badge-primary':lead.status==='NEW',
+
+'badge-success':lead.status==='CONVERTED',
+
+'badge-danger':lead.status==='LOST'
+
+}">
+
+{{lead.status}}
+
+</span>
+
+
+
+
+<span
+
+class="badge"
+
+[ngClass]="{
+
+'badge-danger':lead.priority==='HIGH',
+
+'badge-warning':lead.priority==='MEDIUM',
+
+'badge-success':lead.priority==='LOW'
+
+}">
+
+{{lead.priority}}
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- =========================
+     CUSTOMER INFO
+========================= -->
+
+
+<div class="card-body">
+
+
+
+<h3>
+
+Customer Information
+
+</h3>
+
+
+
+<div class="details-grid">
+
+
+
+<div class="detail-item">
+
+<label>Name</label>
+
+<p>{{lead.customerName}}</p>
+
+</div>
+
+
+
+<div class="detail-item">
+
+<label>Phone</label>
+
+<p>{{lead.phoneNo}}</p>
+
+</div>
+
+
+
+<div class="detail-item">
+
+<label>Email</label>
+
+<p>{{lead.email}}</p>
+
+</div>
+
+
+
+<div class="detail-item">
+
+<label>City</label>
+
+<p>{{lead.city}}</p>
+
+</div>
+
+
+
+<div class="detail-item full">
+
+<label>Address</label>
+
+<p>{{lead.address}}</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- =========================
+     LEAD INFO
+========================= -->
+
+
+<div class="card-body">
+
+
+
+<h3>
+
+Lead Information
+
+</h3>
+
+
+
+<div class="details-grid">
+
+
+
+<div class="detail-item">
+
+<label>Category</label>
+
+<p>{{lead.category}}</p>
+
+</div>
+
+
+
+
+<div class="detail-item">
+
+<label>Source</label>
+
+<p>{{lead.leadSource}}</p>
+
+</div>
+
+
+
+
+<div class="detail-item">
+
+<label>Assigned Executive</label>
+
+<p>{{lead.assignedTo}}</p>
+
+</div>
+
+
+
+
+<div class="detail-item">
+
+<label>Created Date</label>
+
+<p>{{lead.createdDate}}</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- =========================
+     TIMELINE PLACEHOLDER
+========================= -->
+
+
+<div class="card-body">
+
+
+<h3>
+
+Activity Timeline
+
+</h3>
+
+
+
+<div class="timeline">
+
+
+
+<div class="timeline-item">
+
+<span></span>
+
+<p>
+
+Lead Created
+
+</p>
+
+</div>
+
+
+
+<div class="timeline-item">
+
+<span></span>
+
+<p>
+
+Contact Pending
+
+</p>
+
+</div>
+
+
+
+<div class="timeline-item">
+
+<span></span>
+
+<p>
+
+Follow Up Required
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>

@@ -1,0 +1,229 @@
+<div class="page">
+<div class="page-header flex justify-between items-center">
+
+  <h1 class="page-title">
+    My Profile
+  </h1>
+
+
+  <button 
+    class="button-outline"
+    (click)="goToDashboard()">
+
+    <i class="bi bi-arrow-left"></i>
+    Back to Dashboard
+
+  </button>
+
+</div>
+
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+
+    <!-- Profile Card -->
+
+<div class="lg:col-span-4">
+
+  <div class="card">
+
+    <div class="profile-header">
+
+      
+
+
+      <!-- Profile Icon -->
+
+      <div class="profile-avatar">
+
+        <i class="bi bi-person-fill"></i>
+
+      </div>
+
+
+
+      <!-- User Info -->
+
+      <div class="profile-info">
+
+        <h2>
+          {{user?.firstName}} {{user?.lastName}}
+        </h2>
+
+        <p>
+          @{{user?.username}}
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+   <!-- Right Side - Profile Details -->
+
+<div class="lg:col-span-8">
+
+  <div class="card">
+
+
+    <div class="card-header">
+
+      <h3 class="card-title">
+        Personal Information
+      </h3>
+
+    </div>
+
+
+
+    <div class="card-body">
+
+
+      <div class="form-row">
+
+
+        <div class="form-group">
+
+          <label class="form-label">
+            First Name
+          </label>
+
+          <input 
+            type="text"
+            class="form-input"
+            [(ngModel)]="user.firstName"
+            [readonly]="!editMode">
+
+        </div>
+
+
+
+        <div class="form-group">
+
+          <label class="form-label">
+            Last Name
+          </label>
+
+          <input 
+            type="text"
+            class="form-input"
+            [(ngModel)]="user.lastName"
+            [readonly]="!editMode">
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label class="form-label">
+          Username
+        </label>
+
+        <input 
+          type="text"
+          class="form-input"
+          [(ngModel)]="user.username"
+          readonly>
+
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label class="form-label">
+          Email Address
+        </label>
+
+        <input 
+          type="email"
+          class="form-input"
+          [(ngModel)]="user.email"
+          [readonly]="!editMode">
+
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label class="form-label">
+          Phone Number
+        </label>
+
+        <input 
+          type="text"
+          class="form-input"
+          [(ngModel)]="user.phoneNo"
+          [readonly]="!editMode">
+
+      </div>
+
+
+
+      <!-- Password Change -->
+
+      <div *ngIf="changePasswordMode">
+
+
+        <div class="form-group">
+
+          <label class="form-label">
+            New Password
+          </label>
+
+          <input 
+            type="password"
+            class="form-input"
+            [(ngModel)]="newPassword">
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="card-footer">
+
+
+      <button 
+        class="button-primary"
+        (click)="toggleEdit()">
+
+        {{editMode ? 'Save Profile' : 'Edit Profile'}}
+
+      </button>
+
+
+
+      <button 
+        class="button-outline"
+        (click)="togglePasswordChange()">
+
+        {{changePasswordMode ? 'Save Password' : 'Change Password'}}
+
+      </button>
+
+
+    </div>
+
+
+  </div>
+
+</div>

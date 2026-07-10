@@ -1,0 +1,27 @@
+/* Notifications Panel Styles */
+
+.card {
+  box-shadow: var(--shadow-large);
+  border: 1px solid var(--border-color);
+}
+
+.card-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header .card-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color);
+  border-radius: 10px;
+}

@@ -1,0 +1,97 @@
+<div class="edit-lead-container">
+
+
+
+    <!-- EDIT BUTTON -->
+
+
+    <button
+
+    class="action-btn edit-btn"
+
+    (click)="openForm()">
+
+
+
+        <i class="bi bi-pencil-square"></i>
+
+
+
+    </button>
+
+
+
+
+
+    <!-- MODAL -->
+
+
+    <div
+
+    class="form-overlay"
+
+    *ngIf="showForm">
+
+
+
+        <div class="form-modal">
+
+
+
+            <div class="modal-header">
+
+
+
+                <h2>
+
+                    Edit Lead
+
+                </h2>
+
+
+
+
+                <button
+
+                class="close-button"
+
+                (click)="closeForm()">
+
+
+
+                    <i class="bi bi-x-lg"></i>
+
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <app-lead-form
+
+[isEditMode]="true"
+
+[leadId]="leadId"
+
+(formSubmitted)="updated()">
+
+</app-lead-form>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>

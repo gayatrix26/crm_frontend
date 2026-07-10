@@ -1,0 +1,178 @@
+/* ==========================================================
+   ADD LEAD
+   CRM FRONTEND
+========================================================== */
+
+
+.add-lead-container{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+
+.form-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    rgba(0,0,0,.35);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:var(--z-modal);
+
+    animation:fade-in .3s ease;
+
+}
+
+
+
+
+/* ==========================================================
+   MODAL
+========================================================== */
+
+
+.form-modal{
+
+    width:100%;
+
+    max-width:900px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    background:var(--card-color);
+
+    border-radius:var(--radius-large);
+
+    box-shadow:var(--shadow-large);
+
+    animation:scale-in .3s ease;
+
+}
+
+
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 24px;
+
+    border-bottom:
+
+    1px solid var(--border-color);
+
+}
+
+
+
+.modal-header h2{
+
+    margin:0;
+
+}
+
+
+
+
+/* ==========================================================
+   CLOSE BUTTON
+========================================================== */
+
+
+.close-button{
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--text-color);
+
+    transition:var(--transition-fast);
+
+}
+
+
+
+.close-button:hover{
+
+    background:
+
+    rgba(239,68,68,.15);
+
+    color:var(--danger-color);
+
+}
+
+
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+
+@media(max-width:768px){
+
+
+    .add-lead-container{
+
+        width:100%;
+
+    }
+
+
+    .add-lead-container button{
+
+        width:100%;
+
+    }
+
+
+    .form-modal{
+
+        max-height:95vh;
+
+    }
+
+
+}

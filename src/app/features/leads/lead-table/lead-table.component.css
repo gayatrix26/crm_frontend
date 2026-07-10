@@ -1,0 +1,464 @@
+/* ==========================================
+   MATERIAL PAGINATOR FIX
+========================================== */
+
+::ng-deep .mat-mdc-paginator {
+
+    background: transparent;
+
+    color: #4b3aa8;
+
+}
+
+
+
+::ng-deep .mat-mdc-paginator-navigation-button {
+
+    color: #6b4eff !important;
+
+    width: 38px;
+
+    height: 38px;
+
+}
+
+
+
+::ng-deep .mat-mdc-paginator-navigation-button:hover {
+
+    background: #eee9ff !important;
+
+}
+
+
+
+::ng-deep .mat-mdc-paginator-navigation-button svg {
+
+    fill: #6b4eff !important;
+
+}
+
+
+
+::ng-deep .mat-mdc-paginator-navigation-button:disabled {
+
+    opacity: 0.35;
+
+}
+
+
+
+::ng-deep .mat-mdc-paginator-page-size-label,
+
+::ng-deep .mat-mdc-paginator-range-label {
+
+    color: #555;
+
+    font-size: 14px;
+
+}
+
+/* ==========================================================
+   LEAD TABLE
+   CRM FRONTEND
+   ========================================================== */
+
+
+/* ==========================================================
+   TABLE WRAPPER
+   ========================================================== */
+
+.table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:visible;
+
+}
+
+
+/* ==========================================================
+   TABLE
+   ========================================================== */
+
+.lead-table{
+
+    width:100%;
+
+    background:var(--card-color);
+
+    border-radius:var(--radius-low);
+
+    overflow:visible;
+
+    padding-left:var(--spacing-small);
+
+    margin-left:2px;
+    margin-right:2px;
+
+
+}
+
+
+/* ==========================================================
+   HEADER ROW
+   ========================================================== */
+
+.mat-mdc-header-row{
+
+    background:var(--primary-light-color);
+
+}
+
+
+/* ==========================================================
+   HEADER CELL
+   ========================================================== */
+
+.mat-mdc-header-cell{
+
+    color:var(--text-inverse-color);
+
+    font-size:var(--font-small);
+
+    font-weight:var(--weight-semi-bold);
+
+    padding:12px;
+
+    white-space:nowrap;
+
+}
+
+
+/* ==========================================================
+   HEADER CONTENT
+   ========================================================== */
+
+.header-cell{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    gap:10px;
+
+    white-space:nowrap;
+
+}
+
+
+/* ==========================================================
+   FUNNEL ICON
+   ========================================================== */
+
+.filter-icon{
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    opacity:.8;
+
+    transition:var(--transition-fast);
+
+}
+
+
+.filter-icon:hover{
+
+    opacity:1;
+
+    transform:scale(1.15);
+
+    color:var(--secondary-color);
+
+}
+
+
+
+/* ==========================================================
+   SORT HEADER
+========================================================== */
+
+.mat-sort-header-container{
+
+    color:var(--text-inverse-color);
+
+}
+
+
+
+/* ==========================================================
+   BODY ROW
+   ========================================================== */
+
+.mat-mdc-row{
+
+    border-bottom:
+
+    1px solid var(--border-color);
+
+    transition:
+
+    var(--transition-fast);
+
+}
+
+
+.mat-mdc-row:hover{
+
+    background:
+
+    rgba(124,58,237,.05);
+
+}
+
+
+/* ==========================================================
+   BODY CELL
+   ========================================================== */
+
+.mat-mdc-cell{
+
+    color:var(--text-color);
+
+    padding:6px;
+
+    white-space:nowrap;
+
+}
+
+
+/* ==========================================================
+   ACTION BUTTONS
+   ========================================================== */
+
+.action-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+/* ==========================================================
+   ACTION BUTTON
+   ========================================================== */
+
+.action-btn{
+
+    width:36px;
+
+    height:36px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:var(--radius-round);
+
+    cursor:pointer;
+
+    transition:var(--transition-fast);
+
+}
+
+
+/* ==========================================================
+   VIEW
+   ========================================================== */
+
+.view-btn{
+
+    background:
+
+    rgba(59,130,246,.15);
+
+    color:var(--info-color);
+
+}
+
+
+.view-btn:hover{
+
+    background:var(--info-color);
+
+    color:white;
+
+}
+
+
+
+/* ==========================================================
+   EDIT
+   ========================================================== */
+
+.edit-btn{
+
+    background:
+
+    rgba(245,158,11,.15);
+
+    color:var(--warning-color);
+
+}
+
+
+.edit-btn:hover{
+
+    background:var(--warning-color);
+
+    color:white;
+
+}
+
+
+
+/* ==========================================================
+   DELETE
+   ========================================================== */
+
+.delete-btn{
+
+    background:
+
+    rgba(239,68,68,.15);
+
+    color:var(--danger-color);
+
+}
+
+
+.delete-btn:hover{
+
+    background:var(--danger-color);
+
+    color:white;
+
+}
+
+
+/* ==========================================================
+   BADGES
+   ========================================================== */
+
+.badge{
+
+    min-width:80px;
+
+}
+
+
+
+/* ==========================================================
+   PAGINATION
+   ========================================================== */
+
+mat-paginator{
+
+    background:var(--card-color);
+
+    color:var(--text-color);
+
+    border-top:
+
+    1px solid var(--border-color);
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media(max-width:992px){
+
+    .mat-mdc-header-cell,
+    .mat-mdc-cell{
+
+        padding:12px;
+
+    }
+
+
+}
+
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media(max-width:768px){
+
+
+    .lead-table{
+
+        min-width:1000px;
+
+    }
+
+
+    .action-btn{
+
+        width:32px;
+
+        height:32px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   FILTER DROPDOWN FIX
+========================================================== */
+
+
+.mat-mdc-header-cell{
+
+    overflow:visible !important;
+
+}
+
+
+.mat-mdc-header-row{
+
+    overflow:visible !important;
+
+}
+
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+    overflow-y:visible !important;
+
+}
+
+
+.header-cell{
+
+    position:relative;
+
+    overflow:visible;
+
+}
+
+.table-text{
+
+    color:var(--text-color);
+
+    font-weight:var(--weight-medium);
+
+}

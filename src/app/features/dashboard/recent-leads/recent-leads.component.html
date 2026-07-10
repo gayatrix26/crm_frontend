@@ -1,0 +1,144 @@
+<section class="recent-leads">
+
+
+<div class="table-header">
+
+
+    <h2>
+
+        <i class="bi bi-clock-history"></i>
+
+        Recent Leads
+
+    </h2>
+
+
+
+    <button class="view-all-btn">
+
+        View All
+
+        <i class="bi bi-arrow-right"></i>
+
+    </button>
+
+
+</div>
+
+
+
+<div class="table-container">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>Customer</th>
+
+<th>Phone</th>
+
+<th>Category</th>
+
+<th>Status</th>
+
+<th>Priority</th>
+
+<th>Created</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody>
+
+
+<tr *ngFor="let lead of recentLeads">
+
+
+<td>
+    {{lead.customerName}}
+</td>
+
+
+<td>
+    {{lead.phoneNo}}
+</td>
+
+
+
+<td>
+
+    {{lead.category?.categoryName}}
+
+</td>
+
+
+
+<td>
+
+<span 
+class="status"
+[class.new]="lead.status === 'NEW'"
+[class.contacted]="lead.status === 'CONTACTED'"
+[class.qualified]="lead.status === 'QUALIFIED'"
+[class.lost]="lead.status === 'LOST'"
+[class.closed]="lead.status === 'CLOSED'">
+
+{{lead.status}}
+
+</span>
+
+
+</td>
+
+
+
+<td>
+
+
+<span 
+class="priority"
+[class.high]="lead.priority === 'HIGH'"
+[class.medium]="lead.priority === 'MEDIUM'"
+[class.low]="lead.priority === 'LOW'">
+
+
+{{lead.priority}}
+
+
+</span>
+
+
+</td>
+
+
+
+
+<td>
+
+{{lead.createdDate | date:'dd MMM yyyy'}}
+
+</td>
+
+
+
+</tr>
+
+
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+</section>

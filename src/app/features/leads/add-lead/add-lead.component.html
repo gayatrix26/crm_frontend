@@ -1,0 +1,85 @@
+<div class="add-lead-container">
+
+
+    <!-- ADD BUTTON -->
+
+    <button
+
+    class="button button-primary"
+
+    (click)="openForm()">
+
+
+
+        <i class="bi bi-plus-lg"></i>
+
+
+        Add Lead
+
+
+    </button>
+
+
+
+
+    <!-- FORM AREA -->
+
+
+    <div
+
+    class="form-overlay"
+
+    *ngIf="showForm">
+
+
+
+        <div class="form-modal">
+
+
+            <div class="modal-header">
+
+
+                <h2>
+
+                    Add New Lead
+
+                </h2>
+
+
+
+                <button
+
+                class="close-button"
+
+                (click)="closeForm()">
+
+
+
+                    <i class="bi bi-x-lg"></i>
+
+
+
+                </button>
+
+
+            </div>
+
+
+
+
+            <app-lead-form
+
+            (formSubmitted)="leadAdded()">
+
+            </app-lead-form>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
